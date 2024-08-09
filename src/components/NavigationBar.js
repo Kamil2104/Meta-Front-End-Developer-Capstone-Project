@@ -4,7 +4,14 @@ const NavigationBar = () => {
   return (
     <nav>
       <img src={Logo} alt="Little Lemon Logo"/>
-        Navigation bar
+      <ul>
+        <li> <a href='home.html'> HOME </a> </li>
+        <li> <a href='about.html'> ABOUT </a> </li>
+        <li> <a href='menu.html'> MENU </a> </li>
+        <li> <a href='reservations.html'> RESERVATIONS </a> </li>
+        <li> <a href='order.html'> ORDER ONLINE </a> </li>
+        <li> <a href='login.html'> LOGIN </a> </li>
+      </ul>
     </nav>
 )};
 
