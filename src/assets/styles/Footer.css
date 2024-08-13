@@ -12,7 +12,7 @@ footer {
   }
 
   footer h3 {
-    height: 2em;
+    height: 1em;
     color: #e5d7d7;
   }
 
@@ -41,6 +41,14 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 6em;
+  }
+
+  footer .footerNavigation header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-bottom: 1em;
   }
 
   footer .footerNavigation .doormatNavigation,
@@ -89,7 +97,7 @@ footer {
     }
 
     footer .footerNavigation {
-      gap: 1em;
+      gap: 2em;
     }
 
     header h3 {
@@ -111,38 +119,51 @@ footer {
     }
 
     footer .footerNavigation {
-      gap: 1em;
-
       margin-right: 2em;
     }
 
-    header h3 {
-      font-size: .65em;
+    footer .footerNavigation .links {
+      gap: .3em;
     }
 
     .links a {
+      font-size: .65em;
+    }
+
+    header h3 {
       font-size: .65em;
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     footer {
-      gap: 1.5em;
-    }
+      gap: 0em;
 
-    footer .logo img {
-      width: 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     footer .footerNavigation {
-      gap: .5em;
+      gap: 3em;
+
+      padding: 0em 2em 0em 2em;
+      margin-right: 0em;
     }
 
-    header h3 {
-      font-size: .5em;
+    footer .logo {
+      margin: 0;
     }
 
     .links a {
-      font-size: .5em;
+      font-size: .45em;
+    }
+
+    footer .footerNavigation header {
+      padding-bottom: .25em;
+    }
+
+    footer header h3 {
+      font-size: .45em;
     }
   }
