@@ -1,0 +1,148 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+
+    width: 100%;
+    padding: 2em 0em 2em 0em;
+
+    background-color: #495E57;
+  }
+
+  footer h3 {
+    height: 2em;
+    color: #e5d7d7;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #e5d7d7;
+  }
+
+  footer .logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  footer .logo img {
+    width: 120px;
+  }
+
+  footer .footerNavigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6em;
+  }
+
+  footer .footerNavigation .doormatNavigation,
+  footer .footerNavigation .contact,
+  footer .footerNavigation .socialMediaLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  footer .footerNavigation .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5em;
+
+    margin-top: 1em;
+  }
+
+  @media screen and (max-width: 900px) {
+    footer {
+      gap: 3em;
+    }
+
+    footer .footerNavigation {
+      gap: 3em;
+    }
+
+    footer .logo img {
+      width: 100px;
+    }
+
+    header h3 {
+      font-size: .9em;
+    }
+
+    .links a {
+      font-size: .9em;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    footer .logo img {
+      width: 70px;
+    }
+
+    footer .footerNavigation {
+      gap: 1em;
+    }
+
+    header h3 {
+      font-size: .8em;
+    }
+
+    .links a {
+      font-size: .8em;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    footer .logo {
+      margin-left: 2em;
+    }
+
+    footer .logo img {
+      width: 50px;
+    }
+
+    footer .footerNavigation {
+      gap: 1em;
+
+      margin-right: 2em;
+    }
+
+    header h3 {
+      font-size: .65em;
+    }
+
+    .links a {
+      font-size: .65em;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    footer {
+      gap: 1.5em;
+    }
+
+    footer .logo img {
+      width: 40px;
+    }
+
+    footer .footerNavigation {
+      gap: .5em;
+    }
+
+    header h3 {
+      font-size: .5em;
+    }
+
+    .links a {
+      font-size: .5em;
+    }
+  }

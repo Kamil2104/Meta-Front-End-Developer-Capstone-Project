@@ -1,5 +1,7 @@
 import Logo from '../assets/Logo.jpg'
 
+import '../assets/NavigationBar.css'
+
 const NavigationBar = () => {
   return (
     <nav>
