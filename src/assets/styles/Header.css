@@ -3,7 +3,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15em;
 
     width: 100%;
 
@@ -17,6 +16,7 @@ header main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 40%;
 
     padding-left: 2em;
 }
@@ -38,6 +38,8 @@ header main h2 {
 }
 
 header p {
+    width: 80%;
+
     font-size: 1.5em;
 
     color: #EDEFEE;
@@ -53,13 +55,11 @@ header img {
     padding-right: 2em;
 }
 
-@media screen and (max-width: 1050px) {
-    header {
-        gap: 10em;
-    }
-}
-
 @media screen and (max-width: 800px) {
+    header {
+        gap: 4em;
+    }
+
     header main h1 {
         font-size: 2.25em;
     }
@@ -83,10 +83,6 @@ header img {
 }
 
 @media screen and (max-width: 650px) {
-    header {
-        gap: 6em;
-    }
-
     header main h1 {
         font-size: 1.75em;
     }
@@ -105,7 +101,7 @@ header img {
     }
 
     header img {
-        width: 150px;
+        width: 175px;
     }
 }
 
@@ -123,7 +119,7 @@ header img {
     }
 
     header main p {
-        font-size: .8em;
+        font-size: .7em;
     }
 
     header main button {
@@ -132,7 +128,7 @@ header img {
     }
 
     header img {
-        width: 100px;
+        width: 130px;
     }
 }
 
@@ -155,7 +151,7 @@ header img {
     }
 
     header img {
-        width: 80px;
+        width: 90px;
     }
 }
 
