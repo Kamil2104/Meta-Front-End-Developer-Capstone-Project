@@ -1,6 +1,6 @@
-import Logo from '../assets/Logo.jpg'
+import Logo from '../assets/images/Logo.jpg'
 
-import '../assets/NavigationBar.css'
+import '../assets/styles/NavigationBar.css'
 
 const NavigationBar = () => {
   return (

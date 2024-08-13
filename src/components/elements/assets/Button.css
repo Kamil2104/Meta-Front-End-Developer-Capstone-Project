@@ -1,0 +1,16 @@
+button {
+    color: black;
+    background-color: #F4CE14;
+
+    font-size: 1em;
+    font-weight: 550;
+
+    padding: 1em 1.5em 1em 1.5em;
+
+    border: none;
+    border-radius: .5em;
+}
+
+button:hover {
+    cursor: pointer;
+}

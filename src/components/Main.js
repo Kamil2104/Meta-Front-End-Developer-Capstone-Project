@@ -1,6 +1,6 @@
-import Highlights from "./main/Highlights";
-import Testimonials from "./main/Testimonials";
-import About from "./main/About";
+import Highlights from "./main/components/Highlights/Highlights.js";
+import Testimonials from "./main/components/Testimonials/Testimonials.js";
+import About from "./main/components/About/About.js";
 
 const Main = () => {
   return (

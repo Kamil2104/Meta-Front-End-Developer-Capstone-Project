@@ -1,0 +1,183 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15em;
+
+    width: 100%;
+
+    background-color: #495E57;
+
+    padding: 2em 0em 2em 0em;
+}
+
+header main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-left: 2em;
+}
+
+header main h1 {
+    font-size: 2.75em;
+
+    color: #F4CE14;
+
+    margin: 0;
+}
+
+header main h2 {
+    font-size: 2em;
+
+    color: #EDEFEE;
+
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+
+    color: #EDEFEE;
+
+    margin: 3em 0em 2em 0em;
+}
+
+header img {
+    border-radius: 1em;
+
+    width: 250px;
+
+    padding-right: 2em;
+}
+
+@media screen and (max-width: 1050px) {
+    header {
+        gap: 10em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header main h1 {
+        font-size: 2.25em;
+    }
+
+    header main h2 {
+        font-size: 1.5em;
+    }
+
+    header main p {
+        font-size: 1.2em;
+    }
+
+    header main button {
+        font-size: 1em;
+        padding: .75em 1.25em .75em 1.25em;
+    }
+
+    header img {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        gap: 6em;
+    }
+
+    header main h1 {
+        font-size: 1.75em;
+    }
+
+    header main h2 {
+        font-size: 1.25em;
+    }
+
+    header main p {
+        font-size: 1em;
+    }
+
+    header main button {
+        font-size: .75em;
+        padding: .75em 1.25em .75em 1.25em;
+    }
+
+    header img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        gap: 2em;
+    }
+
+    header main h1 {
+        font-size: 1.25em;
+    }
+
+    header main h2 {
+        font-size: 1em;
+    }
+
+    header main p {
+        font-size: .8em;
+    }
+
+    header main button {
+        font-size: .55em;
+        padding: .75em 1.25em .75em 1.25em;
+    }
+
+    header img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header main h1 {
+        font-size: 1em;
+    }
+
+    header main h2 {
+        font-size: .75em;
+    }
+
+    header main p {
+        font-size: .6em;
+    }
+
+    header main button {
+        font-size: .45em;
+        padding: .75em 1.25em .75em 1.25em;
+    }
+
+    header img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    header main h1 {
+        font-size: .8em;
+    }
+
+    header main h2 {
+        font-size: .55em;
+    }
+
+    header main p {
+        font-size: .45em;
+    }
+
+    header main button {
+        font-size: .4em;
+        padding: .75em 1.25em .75em 1.25em;
+    }
+
+    header img {
+        width: 70px;
+    }
+}
