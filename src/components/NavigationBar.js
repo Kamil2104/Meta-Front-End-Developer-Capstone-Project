@@ -1,4 +1,4 @@
-import Logo from '../assets/images/Logo.jpg'
+import Logo from '../assets/images/Logo.png'
 
 import '../assets/styles/NavigationBar.css'
 

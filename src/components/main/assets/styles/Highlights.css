@@ -1,0 +1,82 @@
+main .highlights {
+    width: 80%;
+
+    padding-top: .5em;
+}
+
+main .highlights .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 2em;
+
+    width: 100%;
+}
+
+main .highlights .header .heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 50%;
+
+    font-size: 3em;
+}
+
+main .highlights .header .button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 50%;
+}
+
+main .highlights .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    main .highlights .header .heading {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .highlights .header .heading {
+        font-size: 1.5em;
+    }
+
+    main .highlights .header .button {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    main .highlights .header .heading {
+        font-size: 1.2em;
+    }
+
+    main .highlights .header .button {
+        font-size: .65em;
+        padding: .75em 1.25em .75em 1.25em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    main .highlights .header .heading {
+        font-size: 1em;
+    }
+
+    main .highlights .header .button {
+        font-size: .45em;
+    }
+}

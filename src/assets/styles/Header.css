@@ -11,7 +11,7 @@ header {
     padding: 2em 0em 2em 0em;
 }
 
-header main {
+header article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -21,7 +21,7 @@ header main {
     padding-left: 2em;
 }
 
-header main h1 {
+header article h1 {
     font-size: 2.75em;
 
     color: #F4CE14;
@@ -29,7 +29,7 @@ header main h1 {
     margin: 0;
 }
 
-header main h2 {
+header article h2 {
     font-size: 2em;
 
     color: #EDEFEE;
@@ -60,19 +60,19 @@ header img {
         gap: 4em;
     }
 
-    header main h1 {
+    header article h1 {
         font-size: 2.25em;
     }
 
-    header main h2 {
+    header article h2 {
         font-size: 1.5em;
     }
 
-    header main p {
+    header article p {
         font-size: 1.2em;
     }
 
-    header main button {
+    header article button {
         font-size: 1em;
         padding: .75em 1.25em .75em 1.25em;
     }
@@ -83,19 +83,19 @@ header img {
 }
 
 @media screen and (max-width: 650px) {
-    header main h1 {
+    header article h1 {
         font-size: 1.75em;
     }
 
-    header main h2 {
+    header article h2 {
         font-size: 1.25em;
     }
 
-    header main p {
+    header article p {
         font-size: 1em;
     }
 
-    header main button {
+    header article button {
         font-size: .75em;
         padding: .75em 1.25em .75em 1.25em;
     }
@@ -110,19 +110,19 @@ header img {
         gap: 2em;
     }
 
-    header main h1 {
+    header article h1 {
         font-size: 1.25em;
     }
 
-    header main h2 {
+    header article h2 {
         font-size: 1em;
     }
 
-    header main p {
+    header article p {
         font-size: .7em;
     }
 
-    header main button {
+    header article button {
         font-size: .55em;
         padding: .75em 1.25em .75em 1.25em;
     }
@@ -133,19 +133,19 @@ header img {
 }
 
 @media screen and (max-width: 350px) {
-    header main h1 {
+    header article h1 {
         font-size: 1em;
     }
 
-    header main h2 {
+    header article h2 {
         font-size: .75em;
     }
 
-    header main p {
+    header article p {
         font-size: .6em;
     }
 
-    header main button {
+    header article button {
         font-size: .45em;
         padding: .75em 1.25em .75em 1.25em;
     }
@@ -156,19 +156,19 @@ header img {
 }
 
 @media screen and (max-width: 280px) {
-    header main h1 {
+    header article h1 {
         font-size: .8em;
     }
 
-    header main h2 {
+    header article h2 {
         font-size: .55em;
     }
 
-    header main p {
+    header article p {
         font-size: .45em;
     }
 
-    header main button {
+    header article button {
         font-size: .4em;
         padding: .75em 1.25em .75em 1.25em;
     }

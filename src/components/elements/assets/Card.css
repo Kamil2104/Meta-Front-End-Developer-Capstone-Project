@@ -1,0 +1,151 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 495px;
+    width: 300px;
+
+    border-radius: 2em;
+
+    background-color: #dddddd;
+}
+
+.card .image {
+    width: 100%;
+}
+
+.card .image img {
+    height: 200px;
+    width: 100%;
+
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.card .content {
+    padding: 0em 1em 0em 1em;
+}
+
+.card .content .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-height: 60px;
+}
+
+.card .content .title h3 {
+    font-size: 1.5em;
+}
+
+.card .content .title h3.price {
+    color: #EE9972;
+}
+
+.card .content .description {
+    min-height: 135px;
+}
+
+.card .content .description p {
+    font-size: 1.2em;
+}
+
+.card .content .delivery {
+    padding-top: 1.5em;
+    min-height: 60px;
+}
+
+.card .content .delivery span {
+    font-size: 1.2em;
+}
+
+.card .content .delivery span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        height: auto;
+        width: 250px;
+    }
+
+    .card .image img {
+        height: 150px;
+    }
+
+    .card .content .title h3 {
+        font-size: 1.25em;
+    }
+
+    .card .content .description {
+        min-height: 0px;
+        height: auto;
+    }
+
+    .card .content .description p {
+        font-size: 1em;
+    }
+
+    .card .content .delivery {
+        padding: .5em 0em 1.5em 0em;
+
+        min-height: 0px;
+        height: auto;
+    }
+
+    .card .content .delivery span {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 200px;
+    }
+
+    .card .image img {
+        height: 120px;
+    }
+
+    .card .content .title h3 {
+        font-size: 1em;
+    }
+
+    .card .content .description p {
+        font-size: .8em;
+    }
+
+    .card .content .delivery span {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .card {
+        width: 150px;
+    }
+
+    .card .image img {
+        height: 90px;
+    }
+
+    .card .content .title h3 {
+        font-size: .7em;
+    }
+
+    .card .content .description p {
+        font-size: .6em;
+    }
+
+    .card .content .delivery {
+        padding-bottom: 1em;
+    }
+
+    .card .content .delivery span {
+        font-size: .6em;
+    }
+}
