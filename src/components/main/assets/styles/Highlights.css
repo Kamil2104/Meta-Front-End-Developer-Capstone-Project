@@ -1,4 +1,8 @@
 main .highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 
     padding: .5em;
@@ -7,12 +11,12 @@ main .highlights {
 main .highlights .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     padding-bottom: 2em;
 
-    width: 100%;
+    width: calc(900px + 20em);
 }
 
 main .highlights .header .heading {
@@ -47,26 +51,48 @@ main .highlights .cards {
 }
 
 @media screen and (max-width: 1550px) {
+    main .highlights .header {
+        width: calc(900px + 16em);
+    }
+
     main .highlights .cards {
         gap: 8em;
     }
 }
 
 @media screen and (max-width: 1450px) {
+    main .highlights .header {
+        width: calc(900px + 12em);
+    }
+
     main .highlights .cards {
         gap: 6em;
     }
 }
 
 @media screen and (max-width: 1365px) {
+    main .highlights .header {
+        width: calc(900px + 8em);
+    }
+
     main .highlights .cards {
         gap: 4em;
     }
 }
 
 @media screen and (max-width: 1285px) {
+    main .highlights .header {
+        width: calc(900px + 6em);
+    }
+
     main .highlights .cards {
         gap: 3em;
+    }
+}
+
+@media screen and (max-width: 1244px) {
+    main .highlights .header {
+        width: 100%;
     }
 }
 
