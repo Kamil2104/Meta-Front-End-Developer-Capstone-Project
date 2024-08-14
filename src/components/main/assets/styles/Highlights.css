@@ -1,7 +1,7 @@
 main .highlights {
     width: 80%;
 
-    padding-top: .5em;
+    padding: .5em;
 }
 
 main .highlights .header {
@@ -40,10 +40,34 @@ main .highlights .cards {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 10em;
 
     width: 100%;
     color: #333333;
+}
+
+@media screen and (max-width: 1550px) {
+    main .highlights .cards {
+        gap: 8em;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    main .highlights .cards {
+        gap: 6em;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    main .highlights .cards {
+        gap: 4em;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    main .highlights .cards {
+        gap: 3em;
+    }
 }
 
 @media screen and (max-width: 650px) {
