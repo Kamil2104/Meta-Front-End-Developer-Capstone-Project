@@ -23,6 +23,7 @@ main .highlights .header .heading {
     width: 50%;
 
     font-size: 3em;
+    color: #333333;
 }
 
 main .highlights .header .button {
@@ -42,6 +43,7 @@ main .highlights .cards {
     gap: 3em;
 
     width: 100%;
+    color: #333333;
 }
 
 @media screen and (max-width: 650px) {
