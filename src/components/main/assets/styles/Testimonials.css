@@ -1,0 +1,38 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
+
+    padding: 2em 0em 2em 0em;
+}
+
+.testimonials .header h1 {
+    color: #333333;
+    font-size: 3em;
+}
+
+.testimonials .reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+
+    padding: 0em 2em 0em 2em;
+}
+
+@media screen and (max-width: 650px) {
+    .testimonials .header h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .testimonials .header h1 {
+        font-size: 1.5em;
+    }
+}

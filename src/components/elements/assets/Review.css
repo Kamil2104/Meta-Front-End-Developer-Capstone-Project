@@ -1,0 +1,144 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 265px;
+    width: 300px;
+
+    border-radius: 1em;
+    background-color: #FBDABB;
+
+    gap: 0em;
+}
+
+.review .client {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+
+    height: 120px;
+}
+
+.review .client .clientText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+
+    padding-right: 1em;
+}
+
+.review .client .clientText p {
+    font-size: 1.1em;
+
+    margin: 0;
+}
+
+.review .client .clientText .clientName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    height: 60px;
+}
+
+.review .client .clientText .clientName p {
+    font-weight: bold;
+}
+
+.review .client .clientText .clientRating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 60px;
+}
+
+.review .client .clientText .clientRating p {
+    text-decoration: underline;
+}
+
+.review .client .clientPhoto img {
+    width: 120px;
+
+    border-top-left-radius: 1em;
+}
+
+.review .comment {
+    padding: 0em 1em 0em 1em;
+}
+
+@media screen and (max-width: 450px) {
+    .review {
+        height: 200px;
+        width: 180px;
+    }
+
+    .review .client {
+        height: 80px;
+    }
+
+    .review .client .clientText {
+        gap: .5em;
+    }
+
+    .review .client .clientText .clientName,
+    .review .client .clientText .clientRating {
+        height: 40px;
+    }
+
+    .review .client .clientText .clientName p,
+    .review .client .clientText .clientRating p {
+        font-size: .8em;
+    }
+
+    .review .client .clientPhoto img {
+        width: 80px;
+
+        border-top-left-radius: 1em;
+    }
+
+    .review .comment p {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .review {
+        height: 140px;
+        width: 150px;
+    }
+
+    .review .client {
+        height: 60px;
+    }
+
+    .review .client .clientText {
+        gap: .5em;
+    }
+
+    .review .client .clientText .clientName,
+    .review .client .clientText .clientRating {
+        height: 30px;
+    }
+
+    .review .client .clientText .clientName p,
+    .review .client .clientText .clientRating p {
+        font-size: .6em;
+    }
+
+    .review .client .clientPhoto img {
+        width: 60px;
+
+        border-top-left-radius: 1em;
+    }
+
+    .review .comment p {
+        font-size: .5em;
+    }
+}
