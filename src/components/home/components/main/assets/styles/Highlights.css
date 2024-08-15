@@ -1,3 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main .highlights {
     display: flex;
     flex-direction: column;

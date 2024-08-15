@@ -1,4 +1,4 @@
-import Button from './elements/Button'
+import Button from '../components/elements/Button'
 
 import HeaderImage from '../assets/images/HeaderImage.jpg'
 
