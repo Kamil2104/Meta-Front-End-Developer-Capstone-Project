@@ -1,17 +1,11 @@
-import NavigationBar from './components/NavigationBar'
-import Header from './components/Header'
-import Main from './components/main/Main';
-import Footer from './components/Footer';
+import Home from './pages/Home';
 
 import './assets/styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
-      <Header />
-      <Main />
-      <Footer />
+      <Home />
     </div>
   );
 }
