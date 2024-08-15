@@ -1,6 +1,14 @@
+import NavigationBar from "../components/NavigationBar"
+import BookingForm from "../components/booking/components/BookingForm"
+import Footer from "../components/Footer"
+
 const Booking = () => {
   return (
-    <div>Booking</div>
+    <>
+      <NavigationBar />
+      <BookingForm />
+      <Footer />
+    </>
   )
 }
 
