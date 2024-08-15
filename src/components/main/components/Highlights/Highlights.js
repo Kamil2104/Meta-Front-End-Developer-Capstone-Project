@@ -1,9 +1,9 @@
 import Button from '../../../elements/Button'
 import Card from '../../../elements/Card'
 
-import GreekSalad from '../../assets/images/greek salad.jpg'
-import Bruchetta from '../../assets/images/bruchetta.jpg'
-import LemonDessert from '../../assets/images/lemon dessert.jpg'
+import GreekSalad from '../../assets/images/dishes/greek salad.jpg'
+import Bruchetta from '../../assets/images/dishes/bruchetta.jpg'
+import LemonDessert from '../../assets/images/dishes/lemon dessert.jpg'
 
 import '../../assets/styles/Highlights.css'
 

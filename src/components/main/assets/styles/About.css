@@ -1,0 +1,133 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+    width: 100%;
+
+    padding: 2em 0em 5em 0em;
+}
+
+.about .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+    padding: 0em 2em 0em 2em;
+
+    font-size: 3em;
+    color: #333333;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: #dddddd;
+    border-radius: 2em;
+
+    padding: 2em;
+
+    width: 75%;
+}
+.about .content h1, h3, p {
+    margin: 0;
+}
+
+.about .content h1 {
+    font-size: 2.5em;
+    color: #495E57;
+}
+
+.about .content h3 {
+    font-size: 1.75em;
+    color: #EE9972;
+}
+
+.about .content p {
+    padding-top: 1em;
+
+    font-size: 1.25em;
+    color: #333333;
+
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+    .about .header {
+        padding: 0em
+    }
+
+    .about .content h1 {
+        font-size: 2em;
+    }
+
+    .about .content h3 {
+        font-size: 1.25em;
+    }
+
+    .about .content p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about .header {
+        font-size: 2em;
+    }
+
+    .about .content h1 {
+        font-size: 1.75em;
+    }
+
+    .about .content h3 {
+        font-size: 1em;
+    }
+
+    .about .content p {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        padding-bottom: 3.5em;
+    }
+
+    .about .content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about .content p {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .about {
+        padding-bottom: 2.5em;
+    }
+
+    .about .header {
+        font-size: 1.5em;
+    }
+
+    .about .content h1 {
+        font-size: 1.2em;
+    }
+
+    .about .content h3 {
+        font-size: .85em;
+    }
+
+    .about .content p {
+        font-size: .6em;
+    }
+}

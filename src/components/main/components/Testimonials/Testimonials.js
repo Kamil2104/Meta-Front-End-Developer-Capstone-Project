@@ -4,7 +4,6 @@ import Person1 from '../../assets/images/customers/Person1.jpeg'
 import Person2 from '../../assets/images/customers/Person2.jpeg'
 import Person3 from '../../assets/images/customers/Person3.jpg'
 import Person4 from '../../assets/images/customers/Person4.jpeg'
-import Person5 from '../../assets/images/customers/Person5.jpeg'
 
 import '../../assets/styles/Testimonials.css'
 
@@ -41,13 +40,6 @@ const Testimonials = () => {
               clientName="Sophia Caldwell"
               clientRating="5/5"
               clientReview="You have everything here! Appetizers, lunch dishes, desserts, pizzas and many other great dishes, you will always find here something for yourself."
-            />
-
-            <Review
-              clientPhoto={Person5}
-              clientName="Lucas Davidson"
-              clientRating="5/5"
-              clientReview="I'm not from the area, so I decided to come here and I don't regret it! The best restaurant I've ever been to. Come here and taste this delicious dishes!"
             />
           </section>
       </section>

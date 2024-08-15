@@ -70,7 +70,7 @@
 }
 
 .review .comment {
-    padding: 0em 1em 0em 1em;
+    padding: .5em 1em 0em 1em;
 }
 
 @media screen and (max-width: 450px) {
