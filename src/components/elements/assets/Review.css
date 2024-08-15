@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: flex-start;
 
-    height: 265px;
+    height: 250px;
     width: 300px;
 
     border-radius: 1em;
@@ -73,9 +73,18 @@
     padding: .5em 1em 0em 1em;
 }
 
+@media screen and (max-width: 710px) {
+    .review {
+        height: auto;
+    }
+
+    .review .comment {
+        padding-bottom: 1em;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .review {
-        height: 180px;
         width: 180px;
     }
 
