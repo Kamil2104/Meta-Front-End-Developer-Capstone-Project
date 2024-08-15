@@ -1,11 +1,21 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import './assets/Button.css'
 
 const Button = (props) => {
+  const linkStyle = {
+    textDecoration: 'none',
+    color: 'inherit'
+  }
+
   return (
     <>
-      <button> {props.text} </button>
+        {props.text === "Reserve a table"
+          ? <button> <Link to="/booking" style={linkStyle}> {props.text} </Link> </button>
+          : <button> {props.text} </button>
+        }
     </>
   )
 }

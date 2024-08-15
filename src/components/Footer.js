@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import FooterLogo from '../assets/images/FooterLogo.jpg'
 
 import '../assets/styles/Footer.css'
@@ -14,10 +15,10 @@ const Footer = () => {
               <h3> Doormat <br /> Navigation </h3>
             </header>
             <section className="links">
-              <a href='home.html'> Home </a>
+              <Link to="/"> Home </Link>
               <a href='about.html'> About </a>
               <a href='menu.html'> Menu </a>
-              <a href='reservations.html'> Reservations </a>
+              <Link to="/booking"> Reservations </Link>
               <a href='order.html'> Order Online </a>
               <a href='login.html'> Login </a>
             </section>
