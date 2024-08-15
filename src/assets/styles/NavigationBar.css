@@ -22,14 +22,19 @@ nav {
     list-style-type: none;
   }
 
-  nav ul li.clickable:hover {
-    text-decoration: underline;
-  }
-
-  nav ul li a {
+  nav ul li {
     color: #333333;
     font-weight: bold;
     text-decoration: none;
+  }
+
+  nav ul li .clickable {
+    color: #333333;
+    text-decoration: none;
+  }
+
+  nav ul li .clickable:hover {
+    text-decoration: underline;
   }
 
 @media screen and (max-width: 1050px) {

@@ -9,12 +9,12 @@ const NavigationBar = () => {
     <nav>
       <img src={Logo} alt="Little Lemon Logo"/>
       <ul>
-        <li className='clickable'> <Link to="/"> HOME </Link> </li>
-        <li> <a href='about.html'> ABOUT </a> </li>
-        <li> <a href='menu.html'> MENU </a> </li>
-        <li className='clickable'> <Link to="/booking"> RESERVATIONS </Link> </li>
-        <li> <a href='order.html'> ORDER ONLINE </a> </li>
-        <li> <a href='login.html'> LOGIN </a> </li>
+        <li> <Link to="/" className='clickable'> HOME </Link> </li>
+        <li> ABOUT </li>
+        <li> MENU </li>
+        <li> <Link to="/booking" className='clickable'> RESERVATIONS </Link> </li>
+        <li> ORDER ONLINE </li>
+        <li> LOGIN </li>
       </ul>
     </nav>
 )};

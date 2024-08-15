@@ -20,7 +20,7 @@ footer {
     list-style-type: none;
   }
 
-  footer a {
+  footer p {
     text-decoration: none;
     color: #EDEFEE;
   }
@@ -69,6 +69,11 @@ footer {
     margin-top: 1em;
   }
 
+  footer .footerNavigation .links .clickable {
+    color: #EDEFEE;
+    text-decoration: none;
+  }
+
   footer .footerNavigation .links .clickable:hover {
     text-decoration: underline;
   }
@@ -90,7 +95,7 @@ footer {
       font-size: .9em;
     }
 
-    .links a {
+    .links p {
       font-size: .9em;
     }
   }
@@ -108,7 +113,7 @@ footer {
       font-size: .8em;
     }
 
-    .links a {
+    .links p {
       font-size: .8em;
     }
   }
@@ -130,7 +135,7 @@ footer {
       gap: .3em;
     }
 
-    .links a {
+    .links p {
       font-size: .65em;
     }
 
@@ -159,7 +164,7 @@ footer {
       margin: 0;
     }
 
-    .links a {
+    .links p {
       font-size: .45em;
     }
 

@@ -16,11 +16,11 @@ const Footer = () => {
             </header>
             <section className="links">
               <Link to="/" className='clickable'> Home </Link>
-              <a href='about.html'> About </a>
-              <a href='menu.html'> Menu </a>
+              <p> About </p>
+              <p> Menu </p>
               <Link to="/booking" className='clickable'> Reservations </Link>
-              <a href='order.html'> Order Online </a>
-              <a href='login.html'> Login </a>
+              <p> Order Online </p>
+              <p> Login </p>
             </section>
           </section>
           <section className="contact">
@@ -28,9 +28,9 @@ const Footer = () => {
               <h3> Contact </h3>
             </header>
             <section className="links">
-              <a href='address.html'> Address </a>
-              <a href='phone.html'> Phone number </a>
-              <a href='email.html'> Email </a>
+              <p> Address </p>
+              <p> Phone number </p>
+              <p> Email </p>
             </section>
           </section>
           <section className="socialMediaLinks">
@@ -38,9 +38,9 @@ const Footer = () => {
               <h3> Social Media Links </h3>
             </header>
             <section className="links">
-              <a href='address.html'> Address </a>
-              <a href='phone.html'> Phone number </a>
-              <a href='email.html'> Email </a>
+              <p> Address </p>
+              <p> Phone number </p>
+              <p> Email </p>
             </section>
           </section>
         </section>
