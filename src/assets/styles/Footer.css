@@ -69,6 +69,10 @@ footer {
     margin-top: 1em;
   }
 
+  footer .footerNavigation .links .clickable:hover {
+    text-decoration: underline;
+  }
+
   @media screen and (max-width: 900px) {
     footer {
       gap: 3em;
