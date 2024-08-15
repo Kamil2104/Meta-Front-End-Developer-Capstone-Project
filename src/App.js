@@ -1,6 +1,6 @@
 import NavigationBar from './components/NavigationBar'
 import Header from './components/Header'
-import Main from './components/Main';
+import Main from './components/main/Main';
 import Footer from './components/Footer';
 
 import './assets/styles/App.css';
