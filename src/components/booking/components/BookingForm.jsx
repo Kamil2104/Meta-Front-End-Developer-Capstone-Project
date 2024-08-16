@@ -10,6 +10,8 @@ const BookingForm = () => {
   const [numberOfGuests, setNumberOfGuests] = useState('1')
   const [occasion, setOccasion] = useState('Birthday')
 
+  const avaibleTimes = ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00 ", "18:00", "19:00", "20:00"]
+
   return (
     <section className='bookingForm'>
         <h1> Make a reservation </h1>
@@ -22,15 +24,9 @@ const BookingForm = () => {
           <section className='formGroup'>
           <label htmlFor="res-time"> Select an hour </label>
             <select id='res-time' value={time} onChange={(e) => setTime(e.target.value)}>
-              <option> 12:00 </option>
-              <option> 13:00 </option>
-              <option> 14:00 </option>
-              <option> 15:00 </option>
-              <option> 16:00 </option>
-              <option> 17:00 </option>
-              <option> 18:00 </option>
-              <option> 19:00 </option>
-              <option> 20:00 </option>
+              {avaibleTimes.map((time, index) => (
+                <option key={index}> {time} </option>
+              ))}
             </select>
           </section>
 
