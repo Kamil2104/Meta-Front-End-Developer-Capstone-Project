@@ -1,19 +1,34 @@
-import React from "react"
+import React, { useState, useReducer } from 'react';
+import NavigationBar from "../components/NavigationBar";
+import Header from "../components/Header";
+import BookingForm from "../components/booking/components/BookingForm";
+import Footer from "../components/Footer";
 
-import { useState } from 'react'
+const initializeTimes = () => {
+  return {
+    times: ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"]
+  };
+};
 
-import NavigationBar from "../components/NavigationBar"
-import Header from "../components/Header"
-import BookingForm from "../components/booking/components/BookingForm"
-import Footer from "../components/Footer"
+const updateTimes = (state, action) => {
+  switch (action.type) {
+    case 'UPDATE_TIMES':
+      return {
+        ...state,
+        times: state.times
+      };
+    default:
+      return state;
+  }
+};
 
 const Booking = () => {
-  const [date, setDate] = useState('')
-  const [time, setTime] = useState('12:00')
-  const [numberOfGuests, setNumberOfGuests] = useState('1')
-  const [occasion, setOccasion] = useState('Birthday')
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('12:00');
+  const [numberOfGuests, setNumberOfGuests] = useState('1');
+  const [occasion, setOccasion] = useState('Birthday');
 
-  const [avaibleTimes, setAvaibleTimes] = useState(["12:00", "13:00", "14:00", "15:00", "16:00", "17:00 ", "18:00", "19:00", "20:00"])
+  const [state, dispatch] = useReducer(updateTimes, {}, initializeTimes);
 
   return (
     <>
@@ -24,11 +39,11 @@ const Booking = () => {
         time={time} setTime={setTime}
         numberOfGuests={numberOfGuests} setNumberOfGuests={setNumberOfGuests}
         occasion={occasion} setOccasion={setOccasion}
-        avaibleTimes={avaibleTimes}
+        state={state} dispatch={dispatch}
       />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Booking
+export default Booking;
