@@ -4,5 +4,239 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #EDEFEE;
+    padding: 5em 0em 5em 0em;
+}
+
+.bookingForm h1 {
+    margin: 0;
+    padding-bottom: 2em;
+
+    font-size: 3em;
+    color: #333333;
+}
+
+.bookingForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.bookingForm form .formGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+    padding-bottom: 1em;
+
+    border-bottom: .1em solid #33333388;
+}
+
+.bookingForm form .formGroup label {
+    color: #333333;
+
+    width: 280px;
+    font-size: 1.5em;
+}
+
+.bookingForm form .formGroup input,
+.bookingForm form .formGroup select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    color: #333333;
+    background-color: white;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    border-radius: .5em;
+    outline: none;
+
+    -webkit-appearance: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bookingForm form .formGroup input {
+    height: 24px;
+    width: 159.01px;
+
+    padding: .3em .4em .3em .4em;
+}
+
+.bookingForm form .formGroup select {
+    width: 175px;
+
+    padding: .3em .2em .3em .2em;
+}
+
+.bookingForm form input[type="submit"] {
+    color: #333333;
+    background-color: #F4CE14;
+
+    font-size: 1.15em;
+    font-weight: 550;
+
+    margin-top: 2.5em;
+    padding: .75em 1.75em .75em 1.75em;
+
+    border: none;
+    border-radius: .5em;
+}
+
+.bookingForm form input[type="submit"]:hover,
+.bookingForm form .formGroup input:hover,
+.bookingForm form .formGroup select:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .bookingForm h1 {
+        font-size: 2em;
+    }
+
+    .bookingForm form .formGroup {
+        gap: 2em;
+    }
+
+    .bookingForm form .formGroup label {
+        font-size: 1.2em;
+    }
+
+    .bookingForm form .formGroup input,
+    .bookingForm form .formGroup select {
+        font-size: 1.2em;
+    }
+
+    .bookingForm form .formGroup input {
+        height: 23px;
+        width: 139.01px;
+    }
+
+    .bookingForm form .formGroup select {
+        width: 154.35px;
+    }
+
+    .bookingForm form input[type="submit"] {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bookingForm h1 {
+        font-size: 1.75em;
+    }
+
+    .bookingForm form .formGroup {
+        gap: 0em;
+    }
+
+    .bookingForm form .formGroup label {
+        width: 240px;
+        font-size: 1em;
+    }
+
+    .bookingForm form .formGroup input,
+    .bookingForm form .formGroup select {
+        font-size: 1em;
+    }
+
+    .bookingForm form .formGroup input {
+        height: 19px;
+        width: 119.01px;
+    }
+
+    .bookingForm form .formGroup select {
+        width: 131.79px;
+    }
+
+    .bookingForm form input[type="submit"] {
+        font-size: .85em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bookingForm h1 {
+        font-size: 1.5em;
+    }
+
+    .bookingForm form .formGroup label {
+        width: 200px;
+        font-size: .85em;
+    }
+
+    .bookingForm form .formGroup input,
+    .bookingForm form .formGroup select {
+        font-size: .85em;
+    }
+
+    .bookingForm form .formGroup input {
+        height: 17px;
+        width: 99.01px;
+    }
+
+    .bookingForm form .formGroup select {
+        width: 109.88px;
+    }
+
+    .bookingForm form input[type="submit"] {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bookingForm h1 {
+        font-size: 1em;
+    }
+
+    .bookingForm form .formGroup label {
+        width: 175px;
+        font-size: .7em;
+    }
+
+    .bookingForm form .formGroup input,
+    .bookingForm form .formGroup select {
+        font-size: .7em;
+    }
+
+    .bookingForm form .formGroup input {
+        height: 14px;
+        width: 84.01px;
+    }
+
+    .bookingForm form .formGroup select {
+        width: 92.94px;
+    }
+
+    .bookingForm form input[type="submit"] {
+        font-size: .65em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .bookingForm {
+        padding: 2em 0em 2em 0em;
+    }
+
+    .bookingForm h1 {
+        padding-bottom: 1em;
+    }
+
+    .bookingForm form .formGroup {
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    .bookingForm form .formGroup label {
+        width: 120px;
+
+        text-align: center;
+    }
+
+    .bookingForm form input[type="submit"] {
+        margin-top: 0em;
+    }
 }

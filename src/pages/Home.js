@@ -1,5 +1,5 @@
 import NavigationBar from '../components/NavigationBar'
-import Header from '../components/home/components/Header'
+import Header from '../components/Header';
 import Main from '../components/home/components/main/Main';
 import Footer from '../components/Footer';
 
