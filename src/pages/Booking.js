@@ -4,13 +4,13 @@ import Header from "../components/Header";
 import BookingForm from "../components/booking/components/BookingForm";
 import Footer from "../components/Footer";
 
-const initializeTimes = () => {
+export const initializeTimes = () => {
   return {
     times: ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"]
   };
 };
 
-const updateTimes = (state, action) => {
+export const updateTimes = (state, action) => {
   switch (action.type) {
     case 'UPDATE_TIMES':
       return {
