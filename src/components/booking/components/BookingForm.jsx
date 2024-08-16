@@ -5,7 +5,7 @@ const BookingForm = (props) => {
   const handleDateChange = (e) => {
     const newDate = e.target.value;
     props.setDate(newDate);
-    props.dispatch({ type: 'UPDATE_TIMES', date: newDate });
+    props.dispatch({ type: 'UPDATE_TIMES' });
   };
 
   const availableTimes = props.state.times.filter((time) => time !== props.time);
