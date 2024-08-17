@@ -1,21 +1,18 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState, useReducer, useEffect } from 'react';
 import NavigationBar from "../components/NavigationBar";
 import Header from "../components/Header";
 import BookingForm from "../components/booking/components/BookingForm";
 import Footer from "../components/Footer";
 
-export const initializeTimes = () => {
-  return {
-    times: ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"]
-  };
-};
+import { formattedDate } from '../functions/getCurrentDate';
+import { fetchAPI } from '../API/api';
 
 export const updateTimes = (state, action) => {
   switch (action.type) {
-    case 'UPDATE_TIMES':
+    case 'FETCH_TIMES_SUCCESS':
       return {
         ...state,
-        times: state.times
+        times: action.payload
       };
     default:
       return state;
@@ -23,12 +20,26 @@ export const updateTimes = (state, action) => {
 };
 
 const Booking = () => {
-  const [date, setDate] = useState('');
+  const [date, setDate] = useState(formattedDate);
   const [time, setTime] = useState('12:00');
   const [numberOfGuests, setNumberOfGuests] = useState('1');
   const [occasion, setOccasion] = useState('Birthday');
 
-  const [state, dispatch] = useReducer(updateTimes, {}, initializeTimes);
+  const [state, dispatch] = useReducer(updateTimes, { times: [] });
+
+  useEffect(() => {
+    const fetchTimes = () => {
+      try {
+        const availableTimes = fetchAPI(new Date(date));
+
+        dispatch({ type: 'FETCH_TIMES_SUCCESS', payload: availableTimes });
+      } catch (error) {
+        console.error('Error fetching times:', error);
+      }
+    };
+
+    fetchTimes();
+  }, [date]);
 
   return (
     <>
