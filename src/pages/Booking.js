@@ -1,11 +1,13 @@
 import React, { useState, useReducer, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import NavigationBar from "../components/NavigationBar";
 import Header from "../components/Header";
 import BookingForm from "../components/booking/components/BookingForm";
 import Footer from "../components/Footer";
 
 import { formattedDate } from '../functions/getCurrentDate';
-import { fetchAPI } from '../API/api';
+import { fetchAPI, submitAPI } from '../API/api';
 
 export const updateTimes = (state, action) => {
   switch (action.type) {
@@ -27,6 +29,8 @@ const Booking = () => {
 
   const [state, dispatch] = useReducer(updateTimes, { times: [] });
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchTimes = () => {
       try {
@@ -41,6 +45,19 @@ const Booking = () => {
     fetchTimes();
   }, [date]);
 
+  const submitForm = async (formData) => {
+    try {
+      const success = await submitAPI(formData);
+
+      if (success) {
+        navigate('/bookingConfirmation', { state: { formData }})
+      } else {
+        console.error('Submission failed')
+      }
+    } catch (err) {
+      console.error('Error submitting form:', err)
+    }};
+
   return (
     <>
       <NavigationBar />
@@ -51,6 +68,7 @@ const Booking = () => {
         numberOfGuests={numberOfGuests} setNumberOfGuests={setNumberOfGuests}
         occasion={occasion} setOccasion={setOccasion}
         state={state} dispatch={dispatch}
+        submitForm={submitForm}
       />
       <Footer />
     </>

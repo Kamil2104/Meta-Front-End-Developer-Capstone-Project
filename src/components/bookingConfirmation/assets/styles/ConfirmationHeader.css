@@ -1,0 +1,25 @@
+.confirmationHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+    height: 100px;
+    width: 100%;
+
+    padding: 2em 0em 2em 0em;
+
+    background-color: #495E57;
+}
+
+.confirmationHeader img {
+    width: 60px;
+}
+
+.confirmationHeader h1 {
+    color: #EDEFEE;
+    font-size: 2em;
+
+    margin: 0;
+}

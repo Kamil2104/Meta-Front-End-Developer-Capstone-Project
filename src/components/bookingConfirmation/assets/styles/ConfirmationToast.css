@@ -1,0 +1,43 @@
+.confirmationToast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    padding: 4em 0em 4em 0em;
+
+    width: 500px;
+
+    background-color: white;
+}
+
+.confirmationToast .header {
+    text-align: center;
+}
+
+.confirmationToast .header h1 {
+    margin: 0;
+
+    color: #333333;
+    font-size: 1.75em;
+}
+
+.confirmationToast .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.confirmationToast .details .row {
+    width: 300px;
+
+    text-align: center;
+}
+
+.confirmationToast .details .row p {
+    color: #333333;
+    font-size: 1.25em;
+}

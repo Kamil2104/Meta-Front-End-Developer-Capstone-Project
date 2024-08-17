@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Booking from './pages/Booking';
+
 import Home from './pages/Home';
+import Booking from './pages/Booking';
+import BookingConfirmation from './pages/BookingConfirmation';
+
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path='/bookingConfirmation' element={<BookingConfirmation />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

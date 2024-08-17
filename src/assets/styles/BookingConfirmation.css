@@ -1,0 +1,25 @@
+.bookingConfirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5em;
+}
+
+.bookingConfirmation .confirmationButton {
+    color: #333333;
+    background-color: #F4CE14;
+
+    font-size: 1em;
+    font-weight: 550;
+
+    padding: 1em 1.5em 1em 1.5em;
+
+    border: none;
+    border-radius: .5em;
+}
+
+.bookingConfirmation .confirmationButton:hover {
+    cursor: pointer;
+}

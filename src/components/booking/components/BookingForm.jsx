@@ -8,12 +8,25 @@ const BookingForm = (props) => {
     props.dispatch({ type: 'UPDATE_TIMES' });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = {
+      date: props.date,
+      time: props.time,
+      numberOfGuests: props.numberOfGuests,
+      occasion: props.occasion
+    };
+
+    props.submitForm(formData);
+  }
+
   const availableTimes = props.state.times.filter((time) => time !== props.time);
 
   return (
     <section className='bookingForm'>
       <h1>Make a reservation</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <section className='formGroup'>
           <label htmlFor="res-date">Select a date</label>
           <input
