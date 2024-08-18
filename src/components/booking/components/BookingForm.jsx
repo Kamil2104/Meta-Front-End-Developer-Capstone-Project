@@ -34,6 +34,7 @@ const BookingForm = (props) => {
             id='res-date'
             value={props.date}
             onChange={handleDateChange}
+            required={true}
           />
         </section>
 
@@ -43,6 +44,7 @@ const BookingForm = (props) => {
             id='res-time'
             value={props.time}
             onChange={(e) => props.setTime(e.target.value)}
+            required={true}
           >
             <option value={props.time} disabled>{props.time}</option>
             {availableTimes.map((time, index) => (
@@ -59,6 +61,7 @@ const BookingForm = (props) => {
             placeholder='1'
             min="1"
             max="10"
+            required={true}
             value={props.numberOfGuests}
             onChange={(e) => props.setNumberOfGuests(e.target.value)}
           />
@@ -68,6 +71,7 @@ const BookingForm = (props) => {
           <label htmlFor="occasion">Occasion</label>
           <select
             id="occasion"
+            required={true}
             value={props.occasion}
             onChange={(e) => props.setOccasion(e.target.value)}
           >
@@ -77,7 +81,7 @@ const BookingForm = (props) => {
           </select>
         </section>
 
-        <input type='submit' value="Reserve" />
+        <input type='submit' value="Reserve" disabled={props.numberOfGuests > 10 || props.numberOfGuests < 1 ? true : false}/>
       </form>
     </section>
   );

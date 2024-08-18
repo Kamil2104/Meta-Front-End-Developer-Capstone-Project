@@ -87,6 +87,14 @@
     border-radius: .5em;
 }
 
+.bookingForm form input[type="submit"]:disabled {
+    background-color: rgb(195, 195, 195);
+}
+
+.bookingForm form input[type="submit"]:disabled:hover {
+    cursor: default;
+}
+
 .bookingForm form input[type="submit"]:hover,
 .bookingForm form .formGroup input:hover,
 .bookingForm form .formGroup select:hover {
