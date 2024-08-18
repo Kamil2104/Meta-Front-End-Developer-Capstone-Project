@@ -21,13 +21,20 @@ export const updateTimes = (state, action) => {
   }
 };
 
+const initializeTimes = () => {
+  const initialDate = formattedDate;
+  const availableTimes = fetchAPI(new Date(initialDate));
+
+  return { times: availableTimes };
+};
+
 const Booking = () => {
   const [date, setDate] = useState(formattedDate);
   const [time, setTime] = useState('12:00');
   const [numberOfGuests, setNumberOfGuests] = useState('1');
   const [occasion, setOccasion] = useState('Birthday');
 
-  const [state, dispatch] = useReducer(updateTimes, { times: [] });
+  const [state, dispatch] = useReducer(updateTimes, { times: [] }, initializeTimes);
 
   const navigate = useNavigate();
 
@@ -50,13 +57,14 @@ const Booking = () => {
       const success = await submitAPI(formData);
 
       if (success) {
-        navigate('/bookingConfirmation', { state: { formData }})
+        navigate('/bookingConfirmation', { state: { formData }});
       } else {
-        console.error('Submission failed')
+        console.error('Submission failed');
       }
     } catch (err) {
-      console.error('Error submitting form:', err)
-    }};
+      console.error('Error submitting form:', err);
+    }
+  };
 
   return (
     <>
