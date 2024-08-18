@@ -13,7 +13,7 @@ const Button = (props) => {
   return (
     <>
         {props.text === "Reserve a table"
-          ? <button> <Link to="/booking" style={linkStyle}> {props.text} </Link> </button>
+          ? <button aria-label='On Click'> <Link to="/booking" style={linkStyle}> {props.text} </Link> </button>
           : <button> {props.text} </button>
         }
     </>

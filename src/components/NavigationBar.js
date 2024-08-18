@@ -9,10 +9,10 @@ const NavigationBar = () => {
     <nav>
       <img src={Logo} alt="Little Lemon Logo"/>
       <ul>
-        <li> <Link to="/" className='clickable'> HOME </Link> </li>
+        <li> <Link to="/" className='clickable' aria-label='On Click'> HOME </Link> </li>
         <li> ABOUT </li>
         <li> MENU </li>
-        <li> <Link to="/booking" className='clickable'> RESERVATIONS </Link> </li>
+        <li> <Link to="/booking" className='clickable' aria-label='On Click'> RESERVATIONS </Link> </li>
         <li> ORDER ONLINE </li>
         <li> LOGIN </li>
       </ul>

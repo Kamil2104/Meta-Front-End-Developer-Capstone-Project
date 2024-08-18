@@ -16,7 +16,7 @@ const BookingConfirmation = () => {
     <section className='bookingConfirmation'>
       <ConfirmationHeader />
       <ConfirmationToast formData={formData} />
-      <Link to='/' role='button' className='confirmationButton' style={{textDecoration: "none"}}> Go to home page </Link>
+      <Link to='/' role='button' className='confirmationButton' aria-label='On Click' style={{textDecoration: "none"}}> Go to home page </Link>
     </section>
   )
 }

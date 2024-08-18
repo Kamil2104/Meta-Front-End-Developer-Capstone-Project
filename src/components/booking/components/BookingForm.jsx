@@ -81,7 +81,11 @@ const BookingForm = (props) => {
           </select>
         </section>
 
-        <input type='submit' value="Reserve" disabled={props.numberOfGuests > 10 || props.numberOfGuests < 1 ? true : false}/>
+        <input
+          type='submit'
+          value="Reserve"
+          aria-label='On Click'
+          disabled={props.numberOfGuests > 10 || props.numberOfGuests < 1 ? true : false}/>
       </form>
     </section>
   );

@@ -15,10 +15,10 @@ const Footer = () => {
               <h3> Doormat <br /> Navigation </h3>
             </header>
             <section className="links">
-              <Link to="/" className='clickable'> Home </Link>
+              <Link to="/" className='clickable' aria-label='On Click'> Home </Link>
               <p> About </p>
               <p> Menu </p>
-              <Link to="/booking" className='clickable'> Reservations </Link>
+              <Link to="/booking" className='clickable' aria-label='On Click'> Reservations </Link>
               <p> Order Online </p>
               <p> Login </p>
             </section>
