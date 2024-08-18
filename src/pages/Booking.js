@@ -21,11 +21,18 @@ export const updateTimes = (state, action) => {
   }
 };
 
-const initializeTimes = () => {
+export const initializeTimes = () => {
   const initialDate = formattedDate;
-  const availableTimes = fetchAPI(new Date(initialDate));
 
-  return { times: availableTimes };
+  try {
+    const availableTimes = fetchAPI(new Date(initialDate));
+
+    return { times: availableTimes };
+  } catch (err) {
+    console.error('Error fetching initial times:', err);
+
+    return { times: [] };
+  }
 };
 
 const Booking = () => {
@@ -37,20 +44,6 @@ const Booking = () => {
   const [state, dispatch] = useReducer(updateTimes, { times: [] }, initializeTimes);
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const fetchTimes = () => {
-      try {
-        const availableTimes = fetchAPI(new Date(date));
-
-        dispatch({ type: 'FETCH_TIMES_SUCCESS', payload: availableTimes });
-      } catch (error) {
-        console.error('Error fetching times:', error);
-      }
-    };
-
-    fetchTimes();
-  }, [date]);
 
   const submitForm = async (formData) => {
     try {
