@@ -1,9 +1,10 @@
-button {
+button, .clickableLink {
     color: #333333;
     background-color: #F4CE14;
 
     font-size: 1em;
     font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
 
     padding: 1em 1.5em 1em 1.5em;
 
@@ -11,6 +12,6 @@ button {
     border-radius: .5em;
 }
 
-button:hover {
+button:hover, .clickableLink:hover {
     cursor: pointer;
 }
