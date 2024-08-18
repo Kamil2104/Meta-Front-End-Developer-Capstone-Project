@@ -23,3 +23,65 @@
 
     margin: 0;
 }
+
+@media screen and (max-width: 700px) {
+    .confirmationHeader {
+        height: 80px;
+    }
+
+    .confirmationHeader img {
+        width: 40px;
+    }
+
+    .confirmationHeader h1 {
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .confirmationHeader {
+        gap: 1.5em;
+
+        height: 60px;
+    }
+
+    .confirmationHeader img {
+        width: 30px;
+    }
+
+    .confirmationHeader h1 {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .confirmationHeader {
+        gap: 1em;
+
+        height: 40px;
+    }
+
+    .confirmationHeader img {
+        width: 20px;
+    }
+
+    .confirmationHeader h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    .confirmationHeader {
+        gap: 1em;
+
+        height: 20px;
+    }
+
+    .confirmationHeader img {
+        width: 15px;
+    }
+
+    .confirmationHeader h1 {
+        font-size: .8em;
+    }
+}

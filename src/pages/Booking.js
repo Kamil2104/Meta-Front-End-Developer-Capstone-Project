@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useEffect } from 'react';
+import React, { useState, useReducer } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import NavigationBar from "../components/NavigationBar";

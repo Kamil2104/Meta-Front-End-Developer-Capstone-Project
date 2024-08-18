@@ -32,12 +32,74 @@
 }
 
 .confirmationToast .details .row {
-    width: 300px;
-
     text-align: center;
 }
 
 .confirmationToast .details .row p {
     color: #333333;
     font-size: 1.25em;
+}
+
+@media screen and (max-width: 700px) {
+    .confirmationToast {
+        width: 400px;
+    }
+
+    .confirmationToast .header h1 {
+        font-size: 1.5em;
+    }
+
+    .confirmationToast .details .row p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .confirmationToast {
+        gap: 1.25em;
+
+        width: 250px;
+        padding: 2.5em 0em 2.5em 0em;
+    }
+
+    .confirmationToast .header h1 {
+        font-size: 1.25em;
+    }
+
+    .confirmationToast .details .row p {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .confirmationToast {
+        width: 175px;
+        padding: 1.5em 0em 1.5em 0em;
+    }
+
+    .confirmationToast .header h1 {
+        font-size: 1em;
+    }
+
+    .confirmationToast .details .row p {
+        font-size: .55em;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    .confirmationToast {
+        width: 150px;
+    }
+
+    .confirmationToast .header h1 {
+        font-size: .8em;
+    }
+
+    .confirmationToast .details {
+        gap: .5em;
+    }
+
+    .confirmationToast .details .row p {
+        font-size: .45em;
+    }
 }

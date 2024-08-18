@@ -23,3 +23,39 @@
 .bookingConfirmation .confirmationButton:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+    .bookingConfirmation .confirmationButton {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bookingConfirmation {
+        gap: 3em;
+    }
+
+    .bookingConfirmation .confirmationButton {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .bookingConfirmation {
+        gap: 2em;
+    }
+
+    .bookingConfirmation .confirmationButton {
+        font-size: .55em;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    .bookingConfirmation {
+        gap: 1.5em;
+    }
+
+    .bookingConfirmation .confirmationButton {
+        font-size: .45em;
+    }
+}
